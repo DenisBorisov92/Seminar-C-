@@ -51,9 +51,13 @@ FindThirdDigit(num);
 void Day(int num)
 {
     if (num > 5)
-    Console.WriteLine($"День недели {num} является выходным!:)");
+    {
+         Console.WriteLine($"День недели {num} является выходным!:)");
+    }
     else
-    Console.WriteLine($"День недели {num} является будним");
+    {
+         Console.WriteLine($"День недели {num} является будним");
+    }
 }
 
 Console.WriteLine("Введите день недели от 1 до 7: ");
