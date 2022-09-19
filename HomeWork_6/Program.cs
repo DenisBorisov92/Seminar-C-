@@ -8,17 +8,17 @@ int[] CreateRandomArray(int size)
 {
     int[] newArray = new int[size];
 
-    for(int i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
     {
-        Console.WriteLine($"Введите любое целое {i+1} число: ");
+        Console.WriteLine($"Введите любое целое {i + 1} число: ");
         newArray[i] = Convert.ToInt32(Console.ReadLine());
     }
 
     return newArray;
-} 
+}
 void ShowArray(int[] array)
 {
-    for(int i = 0; i < array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
         Console.Write(array[i] + " ");
 
     Console.WriteLine();
@@ -27,9 +27,9 @@ void ShowArray(int[] array)
 int ShowNumbers(int[] array)
 {
     int sum = 0;
-    for(int i = 0; i < array.Length; i++)
-        if(array[i] > 0 ) 
-        sum++;
+    for (int i = 0; i < array.Length; i++)
+        if (array[i] > 0)
+            sum++;
     return sum;
 }
 
